@@ -11,7 +11,8 @@
 
   <meta name="viewport" content="width=1440">
   <link rel="icon" type="image/png" href="assets\Fabicon.png">
-
+  
+ 
   
   
   <style>
@@ -46,10 +47,8 @@
     <title>GrowlMedia</title>
     <!-- <link rel="icon" type="image/png" href="assets\abhinav0091 Final.png"> -->
 
-<!--   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script> -->
-
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-
+ 
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
   
 </head>
 <body>
@@ -421,106 +420,14 @@
                 </form>
             </div>
         </div>
-          
-            <script>
-                (function () {
-                  emailjs.init("q9hutBvWXINHKbbgt"); // Replace with your EmailJS public key
-                  console.log("EmailJS initialized");
-                })();
+    
+      
 
-                async function sendEmail(event) {
-                  event.preventDefault();
-
-
-                  // Get the submit button from the event
-                  const submitButton = event.target.querySelector("button[type='submit']");
-
-                  // Get form values
-                  const name = document.getElementById("name").value.trim();
-                  const phone = document.getElementById("phone").value.trim();
-                  const email = document.getElementById("email").value.trim();
-                  const message = document.getElementById("message").value.trim();
-
-                  // Validation
-                  const phoneRegex = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4}$/;
-                  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-                  if (name.length < 2) {
-                    alert("Please enter a valid name");
-                    return false;
-                  }
-
-                  if (!phoneRegex.test(phone)) {
-                    alert("Please enter a valid phone number");
-                    return false;
-                  }
-
-                  if (!emailRegex.test(email)) {
-                    alert("Please enter a valid email address");
-                    return false;
-                  }
-
-                  if (message.length < 10) {
-                    alert("Message must be at least 10 characters long");
-                    return false;
-                  }
-
-                  try {
-                    // Show loading state
-                    const submitButton = event.target.querySelector("button[type='submit']");
-                    const originalText = submitButton.textContent;
-                    submitButton.textContent = "Sending...";
-                    submitButton.disabled = true;
-
-                    // Send email using EmailJS
-                    const result = await emailjs.send(
-                      "service_cwur6qb", // Replace with your EmailJS service ID
-                      "template_0azpcmg", // Replace with your EmailJS template ID
-                      {
-                        from_name: name,
-                        phone_number: phone,
-                        from_email: email,
-                        message: message,
-                        to_email: "suriyakumar.vijayanayagam@gmail.com",
-                      }
-                    );
-
-                    // Reset form and show success message
-                    console.log("Email sent successfully:", result);
-                    document.getElementById("contactForm").reset();
-                    alert("Thank you for your message! We will get back to you soon.");
-                  } catch (error) {
-                    console.error("Error sending email:", error.text || error);
-                    alert("Sorry, there was an error sending your message. Please try again later.");
-                  } finally {
-                    // Reset button state
-                    submitButton.textContent = originalText;
-                    submitButton.disabled = false;
-                  }
-
-                  return false;
-                }
-
-
-
-
-            </script>
+        
           
         </div>
       </div>
-      <!-- <div class="rectangle-40118"></div>
-      <div class="rectangle-40120"></div>
-      <div class="rectangle-40121"></div>
-      <div class="rectangle-40122"></div>
-      <div class="name">Name</div>
-      <div class="phone">Phone</div>
-      <div class="e-mail">E-mail</div>
-      <div class="message">Message</div>
-      <div class="group-13">
-        <div class="frame-2">
-          <div class="submit">Submit</div>
-        </div>
-      </div> -->
+     
       <div class="group-1597883348">
         <div class="group-1000005911">
           <!-- <div class="lorem-ipsum-dolor-sit-amet-consecutur-dist">
@@ -1249,38 +1156,93 @@
         dayElement.appendChild(number);
         container.appendChild(dayElement);
     }
+     (function () {
+                  emailjs.init("zX08khnpd30hUObD1"); // Replace with your EmailJS public key
+                  console.log("EmailJS initialized");
+                })();
 
-          document.addEventListener("DOMContentLoaded", function () {
-        // Check the screen width
-        if (window.innerWidth <= 768) {
-          // If screen width is 768px or smaller, load the mobile CSS
-          const mobileLink = document.createElement("link");
-          mobileLink.rel = "stylesheet";
-          mobileLink.href = "mobile.css";
-          document.head.appendChild(mobileLink);
-        } else {
-          // Otherwise, load the desktop CSS
-          const desktopLink = document.createElement("link");
-          desktopLink.rel = "stylesheet";
-          desktopLink.href = "style.css";
-          document.head.appendChild(desktopLink);
-        }
-      });
+                async function sendEmail(event) {
+                  event.preventDefault();
 
 
-    // window.addEventListener('DOMContentLoaded', () => {
-    //     const hash = window.location.hash; // Get the hash from the URL
-    //     if (hash) {
-    //         const targetElement = document.querySelector(hash);
-    //         if (targetElement) {
-    //             targetElement.scrollIntoView({ behavior: 'smooth', block: 'center', inline: 'nearest' });
-    //         }
-    //     }
-    // });
+                // Get the submit button from the event
+                const submitButton = event.target.querySelector("button[type='submit']");
+
+                  // Get form values
+                  const name = document.getElementById("name").value.trim();
+                  const phone = document.getElementById("phone").value.trim();
+                  const email = document.getElementById("email").value.trim();
+                  const message = document.getElementById("message").value.trim();
+
+                  // Validation
+                  const phoneRegex = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4}$/;
+                  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+                  if (name.length < 2) {
+                    alert("Please enter a valid name");
+                    return false;
+                  }
+
+                  if (!phoneRegex.test(phone)) {
+                    alert("Please enter a valid phone number");
+                    return false;
+                  }
+
+                  if (!emailRegex.test(email)) {
+                    alert("Please enter a valid email address");
+                    return false;
+                  }
+
+                  if (message.length < 10) {
+                    alert("Message must be at least 10 characters long");
+                    return false;
+                  }
+
+                  try {
+                    // Show loading state
+                    const submitButton = event.target.querySelector("button[type='submit']");
+                    const originalText = submitButton.textContent;
+                    submitButton.textContent = "Sending...";
+                    submitButton.disabled = true;
+
+                    // Send email using EmailJS
+                    const result = await emailjs.send(
+                      "service_54put6a", // Replace with your EmailJS service ID
+                      "template_8ilvpo6", // Replace with your EmailJS template ID
+                      {
+                        from_name: name,
+                        phone_number: phone,
+                        from_email: email,
+                        message: message,
+                        to_email: "abhinavgrowl25@gmail.com",
+                      }
+                    );
+
+                    // Reset form and show success message
+                    console.log("Email sent successfully:", result);
+                    document.getElementById("contactForm").reset();
+                    alert("Thank you for your message! We will get back to you soon.");
+                  } catch (error) {
+                    console.error("Error sending email:", error.text || error);
+                    alert("Sorry, there was an error sending your message. Please try again later.");
+                  } finally {
+                    // Reset button state
+                    submitButton.textContent = originalText;
+                    submitButton.disabled = false;
+                  }
+
+                  return false;
+                }
+
+
+
+   
     </script>
   
 </body>
 </html>
+
+
 
 
 
