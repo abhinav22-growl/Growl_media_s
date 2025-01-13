@@ -565,6 +565,11 @@ html, body {
     zoom:57;
 }
 }
+@media screen and (width: 768px) and (max-width: 1024px) {
+  body {
+    zoom:0.9;
+}
+}
 
  ._150-revenue-growth-only-through-content-marketing-brand-building {
   color: #ffffff;
