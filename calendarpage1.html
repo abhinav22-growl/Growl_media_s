@@ -1,0 +1,950 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./vars.css">
+  <link rel="stylesheet" href="./calendarpage.css">
+
+  <link rel="icon" type="image/png" href="assets\Fabicon.png">
+  <!-- <meta name="viewport" content="width=1440">
+   -->
+  
+  <style>
+   a,
+   button,
+   input,
+   select,
+   h1,
+   h2,
+   h3,
+   h4,
+   h5,
+   * {
+       box-sizing: border-box;
+       margin: 0;
+       padding: 0;
+       border: none;
+       text-decoration: none;
+       background: none;
+   
+       -webkit-font-smoothing: antialiased;
+       font-family: 'Sansation', sans-serif;
+   }
+   
+   menu, ol, ul {
+       list-style-type: none;
+       margin: 0;
+       padding: 0;
+   }
+
+   html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
+/* body {
+    min-height: 225vh;
+    display: flex;
+    flex-direction: column;
+} */
+
+footer {
+    margin-top: auto; /* Push to the bottom */
+}
+
+  /* Fix white space by ensuring content doesn't overflow */
+  .container {
+    overflow: hidden;
+  }
+  </style>
+  <title>Booking page</title>
+</head>
+<body>
+  <div class="calender-page">
+    <img class="rectangle-fe-6-a-2-d-02-2" src="assets\rectangle-fe-6-a-2-d-02-20.png" />
+    <div class="rectangle-12"></div>
+    <img class="card-gridline-1" src="assets\card-gridline-10.png" />
+    <div class="group-1437253914">
+      <div class="group-1437253748">
+        <div class="group-1437253747">
+          <div class="group-1437253743">
+            <div class="frame-25">
+              <img class="vector-1" src="assets/waveptrn.svg" />
+              <footer>
+                <div class="_2024-the-growl-media-all-rights-reserved">
+                  © 2024 The Growl Media. All Rights Reserved.
+                </div>
+
+              </footer>
+             
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="group-1597883318">
+      <div class="quicklink">Quicklink</div>
+      <div class="home-about-us-services">
+        Home
+        <br />
+        About Us
+        <br />
+        Services
+      </div>
+    </div>
+    <div class="group-1597883317">
+      <div class="services">Services</div>
+      <div
+        class="personal-brand-building-content-ideation-content-strategy-viral-content-creation-viral-video-editing"
+      >
+        Personal Brand Building
+        <br />
+        Content Ideation
+        <br />
+        Content Strategy
+        <br />
+        Viral Content Creation
+        <br />
+        Viral Video Editing
+      </div>
+    </div>
+    <div class="social-media">Social Media</div>
+    <div class="group-1597883307">
+      <div class="group-1597883304">
+        <div class="send-message">Send Message</div>
+      </div>
+    </div>
+    <img
+      class="image-2024-12-02-t-07-02-12-912-z-1-1"
+      src="assets\abhinav0091 Final.png"
+    />
+    <img class="wave-shap-2" src="assets\wave-shap-20.svg" />
+    <div class="frame-3">
+      <!-- <div 
+          class="contact-us" 
+          style="padding: 5px 10px; border:  #ccc; border-radius: 0px; cursor: pointer; transition: transform 0.3s, background-color 0.3s;" 
+          onclick="document.querySelector(' .group3').scrollIntoView({ behavior: 'smooth' })"
+
+          onmouseover="this.style.transform='scale(1.1)'; this.style.backgroundColor='rgba(199, 162, 83, 0.2)';"
+          onmouseout="this.style.transform='scale(1)'; this.style.backgroundColor='transparent';">
+          Contact Us
+      </div> -->
+      <div 
+        class="contact-us" 
+        style="padding: 5px 10px;  border-radius: 0px; cursor: pointer; transition: transform 0.3s, background-color 0.3s;" 
+        onclick="window.location.href='index.html#contact-us'"
+        
+        onmouseover="this.style.transform='scale(1.1)'; this.style.backgroundColor='rgba(199, 162, 83, 0.2)';"
+        onmouseout="this.style.transform='scale(1)'; this.style.backgroundColor='transparent';">
+        Contact Us
+    </div>
+
+      
+    </div>
+    <div class="frame-31">
+      <div class="group-1597883332">
+        <a href="https://www.instagram.com/abhinav._official1/" target="_blank" rel="noopener noreferrer">
+        <div class="instagram">Instagram</div>
+        </a>
+
+
+        <div class="instagram2">
+          <div class="round"></div>
+          <!-- <img class="instagram3" src="instagram2.svg" /> -->
+          <a href="https://www.instagram.com/abhinav._official1/" target="_blank" rel="noopener noreferrer">
+            <div class="instagram2">
+              <div class="round"></div>
+              <img class="instagram3" src="assets\instagram2.svg" style="cursor: pointer;" />
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="group-1597883331">
+        <a href="https://linkedin.com/in/theabhinav/" target="_blank" rel="noopener noreferrer">
+            <div class="linkedin">Linkedin</div>
+            </a>
+        <!-- <a href="https://linkedin.com/in/theabhinav/" target="_blank" rel="noopener noreferrer"> -->
+          <div class="linkedin2">
+            <div class="round2"></div>
+            <div class="linkedin3">
+              <a href="https://linkedin.com/in/theabhinav/" target="_blank" rel="noopener noreferrer">
+                <img 
+                    class="brand-logos" 
+                    src="assets/brand-logos0.svg" 
+                    style="cursor: pointer;" 
+                    alt="LinkedIn Logo"
+                />
+            </a>
+              <!-- <img class="brand-logos" src="assets\brand-logos0.svg" style="cursor: pointer;" /> -->
+            </div>
+          </div>
+        </div>
+      <div class="group-1597883333">
+        <a href="https://youtube.com/@abhinav._official1" target="_blank" rel="noopener noreferrer">
+        <div class="youtube">Youtube
+        </a>
+        </div>
+        
+        <div class="linkedin-1">
+          <div class="round3"></div>
+          <div class="linkedin4"></div>
+        </div>
+      </div>
+      <div class="group-1597883330">
+        <a href="https://fiverr.com/abhinav0091" target="_blank" rel="noopener noreferrer">
+        <div class="fiverr">Fiverr</div>
+        </a>
+        <div class="linkedin-1">
+          <div class="round4"></div>
+          <div class="linkedin5"></div>
+        </div>
+      </div>
+    </div>
+    
+    <a href="https://youtube.com/@abhinav._official1" target="_blank" rel="noopener noreferrer">
+      <img class="page-1" src="assets\page-10.svg" style="cursor: pointer;" />
+    </a>
+    <!-- <img class="page-1" src="page-10.svg" /> -->
+
+
+    <a href="https://fiverr.com/abhinav0091" target="_blank" rel="noopener noreferrer">
+      <img
+        class="vector"
+        src="assets/vector0.svg"
+        style="width: 20px; height: 14px; position: absolute; left: 1072px; top: 2446px; overflow: visible; cursor: pointer;"
+      />
+    </a>
+
+
+    <!-- <img class="vector2" src="vector1.svg" /> -->
+    <img class="wave-shap-1" src="assets\wave-shap-10.svg" />
+
+
+    <div  class="calender">
+      <div id="slottime" class="rectangle-46"></div>
+      <div id="march" class="march">March</div>
+      <div class="_2021">2021</div>
+      <div class="frame-30">
+        <div class="frame-24">
+          <div class="component-38">
+            <div class="rectangle-47"></div>
+            <div class="_27">27</div>
+          </div>
+          <div class="component-37">
+            <div class="rectangle-47"></div>
+            <div class="_28">28</div>
+          </div>
+          <div class="calender-no">
+            <div class="rectangle-47"></div>
+            <div class="_1">1</div>
+          </div>
+          <div class="component-4">
+            <div class="rectangle-47"></div>
+            <div class="_2">2</div>
+          </div>
+          <div class="component-5">
+            <div class="rectangle-47"></div>
+            <div class="_3">3</div>
+          </div>
+          <div class="component-6">
+            <div class="rectangle-47"></div>
+            <div class="_4">4</div>
+          </div>
+        </div>
+        <div class="frame-252">
+          <div class="component-12">
+            <div class="rectangle-47"></div>
+            <div class="_5">5</div>
+          </div>
+          <div class="component-11">
+            <div class="rectangle-47"></div>
+            <div class="_6">6</div>
+          </div>
+          <div class="component-10">
+            <div class="rectangle-47"></div>
+            <div class="_7">7</div>
+          </div>
+          <div class="component-9">
+            <div class="rectangle-47"></div>
+            <div class="_8">8</div>
+          </div>
+          <div class="component-8">
+            <div class="rectangle-47"></div>
+            <div class="_9">9</div>
+          </div>
+          <div class="component-7">
+            <div class="rectangle-47"></div>
+            <div class="_10">10</div>
+          </div>
+        </div>
+        <div class="frame-26">
+          <div class="component-18">
+            <div class="rectangle-47"></div>
+            <div class="_11">11</div>
+          </div>
+          <div class="component-17">
+            <div class="rectangle-47"></div>
+            <div class="_12">12</div>
+          </div>
+          <div class="component-16">
+            <div class="rectangle-48"></div>
+            <div class="_13">13</div>
+          </div>
+          <div class="component-15">
+            <div class="rectangle-47"></div>
+            <div class="_14">14</div>
+          </div>
+          <div class="component-14">
+            <div class="rectangle-47"></div>
+            <div class="_15">15</div>
+          </div>
+          <div class="component-13">
+            <div class="rectangle-47"></div>
+            <div class="_16">16</div>
+          </div>
+        </div>
+        <div class="frame-27">
+          <div class="component-24">
+            <div class="rectangle-47"></div>
+            <div class="_17">17</div>
+          </div>
+          <div class="component-23">
+            <div class="rectangle-47"></div>
+            <div class="_18">18</div>
+          </div>
+          <div class="component-22">
+            <div class="rectangle-47"></div>
+            <div class="_19">19</div>
+          </div>
+          <div class="component-21">
+            <div class="rectangle-47"></div>
+            <div class="_20">20</div>
+          </div>
+          <div class="component-20">
+            <div class="rectangle-47"></div>
+            <div class="_21">21</div>
+          </div>
+          <div class="component-19">
+            <div class="rectangle-47"></div>
+            <div class="_22">22</div>
+          </div>
+        </div>
+        <div class="frame-28">
+          <div class="component-30">
+            <div class="rectangle-47"></div>
+            <div class="_23">23</div>
+          </div>
+          <div class="component-29">
+            <div class="rectangle-47"></div>
+            <div class="_24">24</div>
+          </div>
+          <div class="component-28">
+            <div class="rectangle-47"></div>
+            <div class="_25">25</div>
+          </div>
+          <div class="component-27">
+            <div class="rectangle-47"></div>
+            <div class="_26">26</div>
+          </div>
+          <div class="component-26">
+            <div class="rectangle-47"></div>
+            <div class="_272">27</div>
+          </div>
+          <div class="component-25">
+            <div class="rectangle-47"></div>
+            <div class="_282">28</div>
+          </div>
+        </div>
+        <div class="frame-29">
+          <div class="component-36">
+            <div class="rectangle-47"></div>
+            <div class="_29">29</div>
+          </div>
+          <div class="component-35">
+            <div class="rectangle-47"></div>
+            <div class="_30">30</div>
+          </div>
+          <div class="component-34">
+            <div class="rectangle-47"></div>
+            <div class="_31">31</div>
+          </div>
+          <div class="component-39">
+            <div class="rectangle-47"></div>
+            <div class="_110">1</div>
+          </div>
+          <div class="component-40">
+            <div class="rectangle-47"></div>
+            <div class="_210">2</div>
+          </div>
+          <div class="component-41">
+            <div class="rectangle-47"></div>
+            <div class="_32">3</div>
+          </div>
+        </div>
+      </div>
+      <img class="change-month" src="assets\right (1).svg" />
+      <img class="change-month1" src="assets\right (2).svg" />
+      <!-- The Overlay (Dark background) -->
+      <div id="overlay"></div>      
+
+    <!-- </div>
+    <div class="select-date">Select Date</div>
+    <div class="rectangle-40128"></div>
+    <div class="select-time">Select Time</div>
+    <div class="frame-123">
+      <div class="frame-120">
+        <a href="bookingpage.html" class="_3-00-pm">3: 00 pm</a>
+      </div>
+      <div class="frame-121">
+        <a href="bookingpage.html" class="_4-00-pm">4: 00 pm</a>
+      </div>
+      <div class="frame-122">
+        <a href="bookingpage.html" class="_5-00-pm">5: 00 pm</a>
+      </div>
+    </div>     -->
+      <style>
+        .select-date, .select-time {
+          font-size: 35px;
+          margin: 20px 0;
+        }
+
+        .select-time {
+          margin-top: 40px;
+          left:650px;
+          top:1680px;
+        }
+    
+        .frame-123 {
+          display: flex;
+          gap: 20px;
+        }
+    
+        .frame-120, .frame-121, .frame-122 {
+          padding: 13px 25px;
+          border: 1px solid #000000;
+          border-radius: 20px;
+          cursor: pointer;
+        }
+    
+        a {
+          text-decoration: none;
+          color: inherit;
+        }
+    
+        /* Modal styles */
+        .modal {
+          display: none;
+          position: fixed;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          z-index: 1000;
+          width: 90%;
+          max-width: 800px;
+          max-height: 90vh;
+          overflow-y: auto;
+          border-radius: 8px;
+        }
+    
+        .overlay {
+          display: none;
+          position: fixed;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background: rgba(0, 0, 0, 0.5);
+          z-index: 999;
+        }
+    
+        /* .main-content.blur {
+          filter: blur(5px);
+          pointer-events: none;
+        } */
+    
+        iframe {
+          width: 100%;
+          height: 90vh;
+          border: none;
+          background: white;
+        }
+    
+        .close-btn {
+          position: absolute;
+          top: 20px;
+          right: 10px;
+          background-color: rgb(255, 255, 255);
+          color: rgb(0, 0, 0);
+          border: none;
+          padding: 15px;
+          border-radius: 50%;
+          cursor: pointer;
+        }
+      </style>
+      <div class="main-content" id="main-content">
+
+        
+        <div class="select-date">Select Date</div>
+        <div class="rectangle-40128">
+          
+        </div>
+        
+        <div class="select-time">Book a slot !</div>
+        <div class="frame-123">
+          <div class="frame-120">
+            <a href="#" onclick="window.open('confirmbooking.html', '_blank');" class="_3-00-pm">3: 00 pm</a>
+          </div>
+          <div class="frame-121">
+            <a href="#" onclick="window.open('confirmbooking.html', '_blank');" class="_4-00-pm">4: 00 pm</a>
+          </div>
+          <div class="frame-122">
+            <a href="#" onclick="window.open('confirmbooking.html', '_blank');" class="_5-00-pm">5: 00 pm</a>
+          </div>
+        </div>
+      </div>
+    
+      <div class="overlay" id="overlay" onclick="closeModal()"></div>
+      <div class="modal" id="modal">
+        <button class="close-btn" onclick="closeModal()">X</button>
+        <iframe src="bookingpage.html"></iframe>
+      </div>
+    
+      <script>
+        function openModal(e) {
+          e.preventDefault();
+          // document.getElementById('main-content').classList.add('blur');
+          document.getElementById('overlay').style.display = 'block';
+          document.getElementById('modal').style.display = 'block';
+        }
+    
+        function closeModal() {
+          // document.getElementById('main-content').classList.remove('blur');
+          document.getElementById('overlay').style.display = 'none';
+          document.getElementById('modal').style.display = 'none';
+        }
+      </script>
+    
+    <div class="group-1597883347">
+      <div id="frame8" class="frame-8">
+        <div class="brand-growth-strategy-call">Brand Growth Strategy Call</div>
+      </div>
+      <div class="ready-to-elevate-your-brand">Ready to elevate your brand?</div>
+      <div
+        class="deep-dive-into-your-brand-s-current-performance-we-ll-analyze-your-existing-strategies-identify-growth-gaps-and-pinpoint-areas-for-improvement-tailored-action-plan-together-we-ll-create-a-personalized-roadmap-designed-to-drive-growth-boost-engagement-and-increase-your-market-presence-clear-actionable-recommendations-walk-away-with-strategic-insights-and-steps-that-align-with-your-goals-for-sustained-success-and-brand-leadership-don-t-wait-secure-your-spot-now-and-let-s-set-your-brand-on-the-path-to-unstoppable-growth"
+      >
+        <span>
+          <span
+            class="deep-dive-into-your-brand-s-current-performance-we-ll-analyze-your-existing-strategies-identify-growth-gaps-and-pinpoint-areas-for-improvement-tailored-action-plan-together-we-ll-create-a-personalized-roadmap-designed-to-drive-growth-boost-engagement-and-increase-your-market-presence-clear-actionable-recommendations-walk-away-with-strategic-insights-and-steps-that-align-with-your-goals-for-sustained-success-and-brand-leadership-don-t-wait-secure-your-spot-now-and-let-s-set-your-brand-on-the-path-to-unstoppable-growth-span"
+          >
+            🔍 Deep Dive into Your Brand&#039;s Current Performance:
+            <br />
+          </span>
+          <span
+            class="deep-dive-into-your-brand-s-current-performance-we-ll-analyze-your-existing-strategies-identify-growth-gaps-and-pinpoint-areas-for-improvement-tailored-action-plan-together-we-ll-create-a-personalized-roadmap-designed-to-drive-growth-boost-engagement-and-increase-your-market-presence-clear-actionable-recommendations-walk-away-with-strategic-insights-and-steps-that-align-with-your-goals-for-sustained-success-and-brand-leadership-don-t-wait-secure-your-spot-now-and-let-s-set-your-brand-on-the-path-to-unstoppable-growth-span2"
+          >
+            We’ll analyze your existing strategies, identify growth gaps, and
+            pinpoint areas for improvement.
+            <br />
+          </span>
+          <span
+            class="deep-dive-into-your-brand-s-current-performance-we-ll-analyze-your-existing-strategies-identify-growth-gaps-and-pinpoint-areas-for-improvement-tailored-action-plan-together-we-ll-create-a-personalized-roadmap-designed-to-drive-growth-boost-engagement-and-increase-your-market-presence-clear-actionable-recommendations-walk-away-with-strategic-insights-and-steps-that-align-with-your-goals-for-sustained-success-and-brand-leadership-don-t-wait-secure-your-spot-now-and-let-s-set-your-brand-on-the-path-to-unstoppable-growth-span3"
+          >
+            💡 Tailored Action Plan:
+            <br />
+          </span>
+          <span
+            class="deep-dive-into-your-brand-s-current-performance-we-ll-analyze-your-existing-strategies-identify-growth-gaps-and-pinpoint-areas-for-improvement-tailored-action-plan-together-we-ll-create-a-personalized-roadmap-designed-to-drive-growth-boost-engagement-and-increase-your-market-presence-clear-actionable-recommendations-walk-away-with-strategic-insights-and-steps-that-align-with-your-goals-for-sustained-success-and-brand-leadership-don-t-wait-secure-your-spot-now-and-let-s-set-your-brand-on-the-path-to-unstoppable-growth-span4"
+          >
+            Together, we’ll create a personalized roadmap designed to drive
+            growth, boost engagement, and increase your market presence.
+            <br />
+          </span>
+          <span
+            class="deep-dive-into-your-brand-s-current-performance-we-ll-analyze-your-existing-strategies-identify-growth-gaps-and-pinpoint-areas-for-improvement-tailored-action-plan-together-we-ll-create-a-personalized-roadmap-designed-to-drive-growth-boost-engagement-and-increase-your-market-presence-clear-actionable-recommendations-walk-away-with-strategic-insights-and-steps-that-align-with-your-goals-for-sustained-success-and-brand-leadership-don-t-wait-secure-your-spot-now-and-let-s-set-your-brand-on-the-path-to-unstoppable-growth-span5"
+          >
+            🎯 Clear, Actionable Recommendations:
+            <br />
+          </span>
+          <span
+            class="deep-dive-into-your-brand-s-current-performance-we-ll-analyze-your-existing-strategies-identify-growth-gaps-and-pinpoint-areas-for-improvement-tailored-action-plan-together-we-ll-create-a-personalized-roadmap-designed-to-drive-growth-boost-engagement-and-increase-your-market-presence-clear-actionable-recommendations-walk-away-with-strategic-insights-and-steps-that-align-with-your-goals-for-sustained-success-and-brand-leadership-don-t-wait-secure-your-spot-now-and-let-s-set-your-brand-on-the-path-to-unstoppable-growth-span6"
+          >
+            Walk away with strategic insights and steps that align with your goals
+            for sustained success and brand leadership.
+            <br />
+          </span>
+          <span
+            class="deep-dive-into-your-brand-s-current-performance-we-ll-analyze-your-existing-strategies-identify-growth-gaps-and-pinpoint-areas-for-improvement-tailored-action-plan-together-we-ll-create-a-personalized-roadmap-designed-to-drive-growth-boost-engagement-and-increase-your-market-presence-clear-actionable-recommendations-walk-away-with-strategic-insights-and-steps-that-align-with-your-goals-for-sustained-success-and-brand-leadership-don-t-wait-secure-your-spot-now-and-let-s-set-your-brand-on-the-path-to-unstoppable-growth-span7"
+          >
+            📈 Don’t wait!
+            <br />
+          </span>
+          <span
+            class="deep-dive-into-your-brand-s-current-performance-we-ll-analyze-your-existing-strategies-identify-growth-gaps-and-pinpoint-areas-for-improvement-tailored-action-plan-together-we-ll-create-a-personalized-roadmap-designed-to-drive-growth-boost-engagement-and-increase-your-market-presence-clear-actionable-recommendations-walk-away-with-strategic-insights-and-steps-that-align-with-your-goals-for-sustained-success-and-brand-leadership-don-t-wait-secure-your-spot-now-and-let-s-set-your-brand-on-the-path-to-unstoppable-growth-span8"
+          >
+            Secure your spot now and let’s set your brand on the path to
+            unstoppable growth! 🚀✨
+          </span>
+        </span>
+      </div>
+    </div>
+    <div class="rectangle-1"></div>
+    <img class="group-1597883322" src="assets\lines.svg" />
+    <div class="rectangle-2"></div>
+    <div class="frame-32">
+      <div class="frame-2">
+
+
+        <!-- <div class="home"></div> -->
+        <div 
+        class="home" 
+        style="padding: 10px 20px; border:  #ccc; border-radius: 20px; cursor: pointer; transition: transform 0.3s, background-color 0.3s;" 
+        onclick="window.location.href='index.html'"
+        
+        onmouseover="this.style.transform='scale(1.1)'; this.style.backgroundColor='rgba(199, 162, 83, 0.2)';"
+        onmouseout="this.style.transform='scale(1)'; this.style.backgroundColor='transparent';">
+        Home
+        </div>
+        <!-- <div class="about-us"></div> -->
+
+        <!-- <div 
+    class="about-us" 
+    style="padding: 10px 20px;  border-radius: 20px; cursor: pointer; transition: transform 0.3s, background-color 0.3s;" 
+    onclick="document.querySelector('.frame-30').scrollIntoView({ behavior: 'smooth', block: 'center', inline: 'nearest' });"
+    onmouseover="this.style.transform='scale(1.1)'; this.style.backgroundColor='rgba(199, 162, 83, 0.2)';"
+    onmouseout="this.style.transform='scale(1)'; this.style.backgroundColor='transparent';">
+    About Us
+</div> -->
+      <div 
+      class="about-us" 
+      style="padding: 10px 20px ; border-radius: 20px; cursor: pointer; transition: transform 0.3s, background-color 0.3s;" 
+      onclick="window.location.href='index.html#rect';"
+      onmouseover="this.style.transform='scale(1.1)'; this.style.backgroundColor='rgba(199, 162, 83, 0.2)';"
+      onmouseout="this.style.transform='scale(1)'; this.style.backgroundColor='transparent';">
+      About Us
+      </div>
+
+
+
+        <!-- <div class="services2">Services</div> -->
+        <div 
+          class="services2" 
+          style="padding: 10px 20px; border:  #ccc; border-radius: 20px; cursor: pointer; transition: transform 0.3s, background-color 0.3s;" 
+          onclick="window.location.href='index.html#sk'"
+
+          onmouseover="this.style.transform='scale(1.1)'; this.style.backgroundColor='rgba(199, 162, 83, 0.2)';"
+          onmouseout="this.style.transform='scale(1)'; this.style.backgroundColor='transparent';">
+          Services
+      </div>
+
+
+
+      </div>
+      <div class="frame-33">
+        <!-- <div class="connect-now">Connect Now</div> -->
+        <div 
+          class="connect-now" 
+          style="padding: 10px 20px;  cursor: pointer; transition: transform 0.3s, background-color 0.3s;" 
+          onclick="window.location.href='index.html#letswork'"
+
+          onmouseover="this.style.transform='scale(1.1)'; this.style.backgroundColor='rgba(199, 162, 83, 0.2)';"
+          onmouseout="this.style.transform='scale(1)'; this.style.backgroundColor='transparent';">
+          Connect Now
+      </div>
+
+
+
+      </div>
+    </div>
+    <div class="build-your-brand-beyond-borders">
+      Build your brand beyond borders
+    </div>
+    <div class="frame-1">
+
+
+      <div class="lets-get-started"
+      onclick="document.querySelector('.frame-8').scrollIntoView({ behavior: 'smooth' })"
+      style="padding: 10px 20px; border:  #ccc; border-radius: 20px; cursor: pointer; transition: transform 0.3s, background-color 0.3s;"
+      onmouseover="this.style.transform='scale(1.1)'; this.style.backgroundColor='rgba(199, 162, 83, 0.2)';"
+      onmouseout="this.style.transform='scale(1)'; this.style.backgroundColor='transparent';"   >
+    Let&#039;s get started
+      </div>
+<!-- 
+      <div class="let-s-get-started" 
+          onclick="document.querySelector('._391161878-799605-ad-a-996-490-a-849-c-0-cb-94722503-f-1').scrollIntoView({ behavior: 'smooth' })"
+          style="padding: 10px 20px; border:  #ccc; border-radius: 20px; cursor: pointer; transition: transform 0.3s, background-color 0.3s;"
+          onmouseover="this.style.transform='scale(1.1)'; this.style.backgroundColor='rgba(199, 162, 83, 0.2)';"
+          onmouseout="this.style.transform='scale(1)'; this.style.backgroundColor='transparent';">
+          Let&#039;s get started
+      </div> -->
+
+        <script>
+          function scrollToSection(selector) {
+            const targetElement = document.querySelector(selector);
+            if (targetElement) {
+              // Calculate the position of the element and offset it
+              const headerOffset = 60; // Adjust this value to match your fixed header height
+              const elementPosition = targetElement.getBoundingClientRect().top;
+              const offsetPosition = window.pageYOffset + elementPosition - headerOffset;
+
+              // Smoothly scroll to the calculated position
+              window.scrollTo({
+                top: offsetPosition,
+                behavior: 'smooth'
+              });
+            }
+          }
+        </script>
+      
+
+
+
+
+    </div>
+    <img
+      class="image-2024-12-02-t-07-02-12-912-z-1-12"
+      src="assets\abhinav0091 Final.png"
+    />
+    <img class="wave-shap-22" src="assets\wave-shap-21.svg" />
+    <div class="frame-124">
+      <div class="values">Values</div>
+      <img class="vector-3" src="assets\vector-30.svg" />
+      <div class="brand">Brand</div>
+      <img class="vector-4" src="assets\vector-40.svg" />
+      <div class="leads">Leads</div>
+      <img class="vector-5" src="assets\vector-50.svg" />
+      <div class="sales">Sales</div>
+    </div>
+  </div>
+  <script>
+    // Calendar functionality
+    document.addEventListener('DOMContentLoaded', () => {
+        // Get DOM elements
+        const monthDisplay = document.querySelector('.march');
+        const yearDisplay = document.querySelector('._2021');
+        const calendarContainer = document.querySelector('.frame-30');
+        const nextButton = document.querySelector('.change-month');
+        const prevButton = document.querySelector('.change-month1');
+        const timeSlots = document.querySelectorAll('.frame-120, .frame-121, .frame-122');
+
+
+
+        const targetElement = document.querySelector('.march');
+
+    
+        // State variables
+        let currentDate = new Date();
+        let selectedDate = null;
+        let selectedTimeSlot = null;
+    
+        // Initialize calendar
+        function initCalendar() {
+            updateCalendarDisplay();
+            setupEventListeners();
+        }
+    
+        // Update calendar display
+        function updateCalendarDisplay() {
+            const firstDay = new Date(currentDate.getFullYear(), currentDate.getMonth(), 1);
+            const lastDay = new Date(currentDate.getFullYear(), currentDate.getMonth() + 1, 0);
+    
+            // Update month and year
+            monthDisplay.textContent = firstDay.toLocaleString('default', { month: 'long' });
+            yearDisplay.textContent = firstDay.getFullYear();
+    
+            // Clear existing calendar days
+            const frames = calendarContainer.querySelectorAll('[class^="frame-"]');
+            frames.forEach(frame => frame.innerHTML = '');
+    
+            let dayCounter = 1;
+            let currentFrame = 0;
+    
+            // Previous month days
+            const firstDayIndex = firstDay.getDay();
+            for (let i = 0; i < firstDayIndex; i++) {
+                createDayElement(frames[currentFrame], null, true);
+            }
+    
+            // Current month days
+            while (dayCounter <= lastDay.getDate()) {
+                const frame = frames[Math.floor((dayCounter + firstDayIndex - 1) / 6)];
+                if (frame) {
+                    createDayElement(frame, dayCounter);
+                    dayCounter++;
+                } else {
+                    break;
+                }
+            }
+    
+            // Next month days
+            frames.forEach(frame => {
+                while (frame.children.length < 6) {
+                    createDayElement(frame, null, true);
+                }
+            });
+        }
+    
+        // Create day element
+        function createDayElement(container, day, inactive = false) {
+            const dayElement = document.createElement('div');
+            dayElement.className = 'calender-no' + (inactive ? ' inactive' : '');
+    
+            const rectangle = document.createElement('div');
+            rectangle.className = 'rectangle-47';
+    
+            const number = document.createElement('div');
+            number.className = '_' + (day || '');
+            number.textContent = day || '';
+    
+            if (!inactive && day) {
+                dayElement.addEventListener('click', () => selectDate(day));
+                if (isSelectedDate(day)) {
+                    dayElement.classList.add('selected');
+                }
+            }
+
+    
+            dayElement.appendChild(rectangle);
+            dayElement.appendChild(number);
+            container.appendChild(dayElement);
+        }
+
+    
+        // Check if date is selected
+        function isSelectedDate(day) {
+            return selectedDate &&
+                selectedDate.getDate() === day &&
+                selectedDate.getMonth() === currentDate.getMonth() &&
+                selectedDate.getFullYear() === currentDate.getFullYear();
+        }
+    
+        // Handle date selection
+        function selectDate(day) {
+            selectedDate = new Date(currentDate.getFullYear(), currentDate.getMonth(), day);
+            updateCalendarDisplay();
+            console.log('Selected date:', selectedDate.toLocaleDateString());
+        }
+    
+        // Setup event listeners
+        function setupEventListeners() {
+            // Next month button
+            nextButton.addEventListener('click', () => {
+                currentDate.setMonth(currentDate.getMonth() + 1);
+                updateCalendarDisplay();
+            });
+
+            prevButton.addEventListener('click', () => {
+                currentDate.setMonth(currentDate.getMonth() - 1);
+                updateCalendarDisplay();
+            });
+    
+            // Time slot selection
+            timeSlots.forEach(slot => {
+                slot.addEventListener('click', () => {
+                    timeSlots.forEach(s => s.classList.remove('selected-time'));
+                    slot.classList.add('selected-time');
+                    selectedTimeSlot = slot.querySelector('div').textContent;
+                    console.log('Selected time:', selectedTimeSlot);
+                });
+            });
+        }
+    
+        // Initialize the calendar
+        initCalendar();
+    });
+        // Create day element
+        function createDayElement(container, day, inactive = false) {
+        const dayElement = document.createElement('div');
+        dayElement.className = 'calender-no' + (inactive ? ' inactive' : '');
+        
+        const rectangle = document.createElement('div');
+        rectangle.className = 'rectangle-47';
+        
+        const number = document.createElement('div');
+        number.className = '_' + (day || '');
+        number.textContent = day || '';
+        
+        if (!inactive && day) {
+            dayElement.addEventListener('click', () => {
+                selectDate(day);
+                // Change background color to orange when clicked
+                rectangle.style.backgroundColor = 'orange';
+            });
+            if (isSelectedDate(day)) {
+                dayElement.classList.add('selected');
+            }
+        }
+    
+        dayElement.appendChild(rectangle);
+        dayElement.appendChild(number);
+        container.appendChild(dayElement);
+    }
+
+
+    // window.onload = function() {
+    //         // Wait for 0.5 seconds after the page is loaded, then scroll to the frame8
+    //         setTimeout(function() {
+    //             document.getElementById("frame8").scrollIntoView({
+    //                 behavior: "smooth", // smooth scroll effect
+    //                 block: "start" // aligns the section at the top of the viewport
+    //             });
+    //         }, 500); // 500 milliseconds = 0.5 seconds
+    //     }
+
+
+
+
+    // window.onload = function() {
+    //         // Scroll to the element with id 'frame8' once the page is loaded
+    //         document.getElementById("frame8").scrollIntoView({
+    //             behavior: "smooth", // smooth scroll effect
+    //             block: "start" // aligns the section at the top of the viewport
+    //         });
+    //     };
+
+    // function smoothScrollTo(elementId) {
+    //   const element = document.getElementById(elementId);
+    //   if (element) {
+    //     const offset = element.offsetTop;
+    //     window.scrollTo({
+    //       top: offset,
+    //       behavior: 'smooth'
+    //     });
+    //   }
+    // }
+
+    // // Handle scroll completion
+    // let scrollTimeout;
+    // window.addEventListener('scroll', () => {
+    //   clearTimeout(scrollTimeout);
+    //   scrollTimeout = setTimeout(() => {
+    //     // Reset any unwanted spacing
+    //     document.body.style.minHeight = 'auto';
+    //     // Ensure all sections are visible
+    //     document.querySelectorAll('frame8').forEach(section => {
+    //       section.style.display = 'block';
+    //     });
+    //   }, 100);
+    // });
+
+    // // Initial scroll on load
+    // document.addEventListener('DOMContentLoaded', () => {
+    //   // Add delay to ensure content loads first
+    //   setTimeout(() => {
+    //     smoothScrollTo('target-section-id'); // Replace with your section ID
+    //   }, 500);
+    // });
+
+   
+
+
+      
+    </script>
+    
+</body>
+</html>

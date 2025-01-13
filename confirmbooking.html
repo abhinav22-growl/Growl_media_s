@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="icon" type="image/png" href="assets\Fabicon.png">
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+    }
+
+    body {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 20px;
+      background: #f9f9f9;
+      font-family: 'Sansation', sans-serif;
+    }
+
+    .form-container {
+      background: white;
+      padding: 40px;
+      border-radius: 16px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    }
+
+    .header {
+      margin-bottom: 40px;
+    }
+
+    h1 {
+      font-size: 28px;
+      font-weight: 600;
+      margin-bottom: 8px;
+      color: #1a1a1a;
+    }
+
+    h2 {
+      font-size: 20px;
+      font-weight: 400;
+      color: #333;
+    }
+
+    .highlight {
+      color: #C4A24C;
+      font-weight: 500;
+    }
+
+    .meeting-details {
+      display: flex;
+      gap: 24px;
+      margin-bottom: 40px;
+      padding: 20px;
+      background: #f8f9fa;
+      border-radius: 8px;
+      flex-wrap: wrap;
+    }
+
+    .meeting-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: #4a5568;
+      font-size: 14px;
+      flex: 1;
+    }
+
+    .form-group {
+      margin-bottom: 24px;
+    }
+
+    .date-time-group {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .date-time-group .form-group {
+      flex: 1;
+      min-width: 150px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: 500;
+      color: #2d3748;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="date"],
+    input[type="time"],
+    textarea {
+      width: 100%;
+      padding: 12px 16px;
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      font-size: 16px;
+      transition: border-color 0.2s;
+      background: #f8fafc;
+    }
+
+    input:focus,
+    textarea:focus {
+      outline: none;
+      border-color: #C4A24C;
+      background: white;
+    }
+
+    textarea {
+      min-height: 100px;
+      resize: vertical;
+    }
+
+    .radio-group {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-top: 8px;
+    }
+
+    .radio-option {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      cursor: pointer;
+    }
+
+    .radio-option input[type="radio"] {
+      width: 16px;
+      height: 16px;
+      cursor: pointer;
+    }
+
+    .button-container {
+      display: flex;
+      gap: 16px;
+      margin-top: 40px;
+      justify-content: center;
+    }
+
+    .btn-book {
+      font-family: 'Sansation', sans-serif;
+      font-size: 15px;
+      padding: 15px 20px;
+      border: 2px solid #C4A24C;
+      border-radius: 15px;
+      cursor: pointer;
+      transition: transform 0.3s, background-color 0.3s, border-color 0.3s;
+      background-color: transparent;
+    }
+
+    .btn-book:hover {
+      transform: scale(1.1);
+      background-color: rgba(199, 162, 83, 0.2);
+      border-color: #C7A253;
+    }
+
+    @media (max-width: 640px) {
+      body {
+        padding: 10px;
+      }
+
+      .form-container {
+        padding: 20px;
+      }
+
+      h1 {
+        font-size: 24px;
+      }
+
+      h2 {
+        font-size: 16px;
+      }
+
+      .meeting-details {
+        flex-direction: column;
+        gap: 16px;
+      }
+
+      .date-time-group {
+        flex-direction: column;
+        gap: 16px;
+      }
+
+      .button-container {
+        flex-direction: column;
+        gap: 12px;
+      }
+    }
+
+              
+          @media screen and (min-width: 1920px) and (max-width: 2559px) {
+            body {
+              zoom: 1.33; 
+            }
+          }
+
+
+          @media screen and (min-width: 2560px) and (max-width: 3071px) {
+            body {
+              zoom: 1.8; 
+            }
+          }
+
+
+          @media screen and (min-width: 3072px) and (max-width: 3839px) {
+            body {
+              zoom: 1.6; 
+            }
+          }
+
+          @media screen and (min-width: 3840px) {
+            body {
+              zoom: 2.75; 
+            }
+          }
+
+          @media screen and (min-width: 1024px) and (max-width: 1336px) {
+            body {
+              zoom: 0.80; 
+            }
+          }
+          @media screen and (min-width: 820px) and (max-width: 1180px) {
+            body {
+              zoom:0.58;
+          }
+          }
+  </style>
+  <title>Confirm Booking</title>
+</head>
+<body>
+  <div class="form-container">
+    <div class="header">
+      <h1>Confirm Booking</h1>
+      <h2>Brand growth strategy call with <span class="highlight">Abhinav</span></h2>
+    </div>
+
+    <div class="meeting-details">
+      <div class="meeting-item">
+        <span>📅</span>
+        <span>Select your preferred date and time</span>
+      </div>
+      <div class="meeting-item">
+        <span>🌍</span>
+        <span>Asia/Calcutta</span>
+      </div>
+      <div class="meeting-item">
+        <span>⏱️</span>
+        <span>30 minutes</span>
+      </div>
+    </div>
+
+    <form id="bookingForm">
+      <div class="date-time-group">
+        <div class="form-group">
+          <label>Preferred Date</label>
+          <input type="date" name="date" required>
+        </div>
+        <div class="form-group">
+          <label>Preferred Time</label>
+          <input type="time" name="time" required>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>What is your name?</label>
+        <input type="text" name="name" required>
+      </div>
+
+      <div class="form-group">
+        <label>What is your email address?</label>
+        <input type="email" name="email" required>
+      </div>
+
+      <div class="form-group">
+        <label>What is your phone number?</label>
+        <input type="tel" name="phone" required>
+      </div>
+
+      <div class="form-group">
+        <label>What type of business are you currently running?</label>
+        <textarea name="business_type" required></textarea>
+      </div>
+
+      <div class="form-group">
+        <label>How many years of experience do you have in this industry?</label>
+        <div class="radio-group">
+          <label class="radio-option">
+            <input type="radio" name="experience" value="0-2 years" required>
+            0-2 years
+          </label>
+          <label class="radio-option">
+            <input type="radio" name="experience" value="2-5 years" required>
+            2-5 years
+          </label>
+          <label class="radio-option">
+            <input type="radio" name="experience" value="More than 5 years" required>
+            More than 5 years
+          </label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Add your website details:</label>
+        <input type="text" name="website">
+      </div>
+
+      <div class="form-group">
+        <label>What's your goal on social media?</label>
+        <textarea name="social_media_goal"></textarea>
+      </div>
+
+      <div class="form-group">
+        <label>What is your monthly investment budget? (in dollars or rupees)</label>
+        <input type="text" name="budget" required>
+      </div>
+
+      <div class="form-group">
+        <label>Want to grow my personal brand on...</label>
+        <div class="radio-group">
+          <label class="radio-option">
+            <input type="radio" name="platform" value="Instagram" required>
+            Instagram
+          </label>
+          <label class="radio-option">
+            <input type="radio" name="platform" value="LinkedIn" required>
+            LinkedIn
+          </label>
+          <label class="radio-option">
+            <input type="radio" name="platform" value="YouTube" required>
+            YouTube
+          </label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>How did you hear about us? (short answer)</label>
+        <textarea name="hear_about_us"></textarea>
+      </div>
+
+      <div class="button-container">
+        <button type="submit" class="btn-book">Book Event</button>
+      </div>
+    </form>
+  </div>
+
+  <script>
+    (function() {
+      emailjs.init("0Hk6pYDtsb2FpXu4H");
+    })();
+
+    document.getElementById('bookingForm').addEventListener('submit', async function(e) {
+      e.preventDefault();
+
+      const submitButton = this.querySelector('.btn-book');
+      submitButton.disabled = true;
+      submitButton.textContent = 'Sending...';
+
+      try {
+        const form = new FormData(this);
+        const data = Object.fromEntries(form.entries());
+
+        await emailjs.send("service_xev41ow", 
+                          "template_ui96fnr", {
+          to_email: "abhinavgrowl25@gmail.com",
+          booking_date: data.date,
+          booking_time: data.time,
+          client_name: data.name,
+          client_email: data.email,
+          client_phone: data.phone,
+          business_type: data.business_type,
+          experience: data.experience,
+          website: data.website || 'Not provided',
+          social_goal: data.social_media_goal || 'Not provided',
+          budget: data.budget,
+          platform: data.platform,
+          source: data.hear_about_us || 'Not provided'
+        });
+
+        alert('Booking confirmed! We will contact you shortly.');
+        this.reset();
+      } catch (error) {
+        console.error('EmailJS Error:', error);
+        alert('Sorry, there was an error submitting your booking. Please try again.');
+      } finally {
+        submitButton.disabled = false;
+        submitButton.textContent = 'Book Event';
+      }
+    });
+  </script>
+</body>
+</html>
+
