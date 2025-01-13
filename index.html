@@ -423,14 +423,17 @@
         </div>
           
             <script>
-                // Initialize EmailJS with version
-                // Initialize with user ID
-                emailjs.init({
-                  publicKey: "OQq85aNFkN2jPD6T4",
-                });
-            
+                (function () {
+                  emailjs.init("q9hutBvWXINHKbbgt"); // Replace with your EmailJS public key
+                  console.log("EmailJS initialized");
+                })();
+
                 async function sendEmail(event) {
                   event.preventDefault();
+
+
+                  // Get the submit button from the event
+                  const submitButton = event.target.querySelector("button[type='submit']");
 
                   // Get form values
                   const name = document.getElementById("name").value.trim();
@@ -471,14 +474,14 @@
 
                     // Send email using EmailJS
                     const result = await emailjs.send(
-                      'service_cwur6qb', // Replace with your EmailJS service ID
+                      "service_cwur6qb", // Replace with your EmailJS service ID
                       "template_0azpcmg", // Replace with your EmailJS template ID
                       {
                         from_name: name,
                         phone_number: phone,
                         from_email: email,
                         message: message,
-                        to_email: "abhinavgrowl25@gmail.com",
+                        to_email: "suriyakumar.vijayanayagam@gmail.com",
                       }
                     );
 
@@ -497,6 +500,8 @@
 
                   return false;
                 }
+
+
 
 
             </script>
